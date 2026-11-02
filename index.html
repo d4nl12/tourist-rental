@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Добавленный тег для мобильной адаптивности -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Equipment Rental Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">Rental Platform</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#tents">Tents</a></li>
+                    <li><a href="#backpacks">Backpacks</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#price">Price List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Don't Buy Gear Rent It!</h1>
+                <p>Professional camping and hiking equipment delivery across Kazakhstan.</p>
+                <a href="#tents" class="btn-primary">Choose Equipment</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="tents" class="section-block">
+                <h2>Tents</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Three-person Tent</h3>
+                        <p>High-wind resistance, double-layer protection.</p>
+                        <p><strong>Weight:</strong> 2.8 kg | <strong>Dimensions:</strong> 210x180 cm</p>
+                        <div class="price">4,500 ₸ / day</div>
+                    </article>
+                    <article class="card">
+                        <h3>Extreme 2-Man Tent</h3>
+                        <p>Designed for severe weather conditions and high altitudes.</p>
+                        <p><strong>Weight:</strong> 3.1 kg | <strong>Dimensions:</strong> 220x150 cm</p>
+                        <div class="price">5,200 ₸ / day</div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="backpacks" class="section-block">
+                <h2>Backpacks</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Expedition Backpack 80L</h3>
+                        <p>Ergonomic frame with adjustable lumbar support.</p>
+                        <p><strong>Weight:</strong> 1.9 kg | <strong>Dimensions:</strong> 75x35 cm</p>
+                        <div class="price">2,500 ₸ / day</div>
+                    </article>
+                    <article class="card">
+                        <h3>Trekking Pack 50L</h3>
+                        <p>Compact size for short weekend trips and trails.</p>
+                        <p><strong>Weight:</strong> 1.4 kg | <strong>Dimensions:</strong> 60x30 cm</p>
+                        <div class="price">1,800 ₸ / day</div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="terms" class="section-block text-block">
+                <h2>Terms & Conditions</h2>
+                <p>All rentals require a valid ID verification and a refundable security deposit. Equipment must be returned clean and dry. Late returns are charged at an hourly overtime rate according to the internal regulations.</p>
+            </section>
+
+            <section id="price" class="section-block text-block">
+                <h2>Price List Summary</h2>
+                <p>We offer flexible daily and weekly rates. Long-term rentals (more than 7 days) include a 15% automatic discount. Special seasonal packages are available upon request through our support center.</p>
+            </section>
+
+            <section class="section-block form-section">
+                <h2>Rental Cost Calculation</h2>
+                <form class="rental-form">
+                    <div class="field">
+                        <label>Issue Date:</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="field">
+                        <label>Return Date:</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="field">
+                        <label>Phone Number:</label>
+                        <input type="tel" placeholder="+7 (700) 000-0000" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Calculate and Book</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Regulations by Ministry of Emergency Situations (EMERCOM)</p>
+            <button class="theme-btn" onclick="document.body.classList.toggle('dark-theme')">Light / Forest Dark</button>
+        </div>
+    </footer>
+
+</body>
+</html>
